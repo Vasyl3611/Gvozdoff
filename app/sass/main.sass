@@ -181,9 +181,10 @@ header
 		flex-wrap: wrap
 		justify-content: space-between
 		.activities-item
+			position: relative
 			text-align: center
 			width: 24%
-			background: url(/img/spa.png)
+			// background: url(/img/spa.png)
 			background-position: center
 			display: flex
 			flex-direction: column
@@ -191,7 +192,17 @@ header
 			max-width: 236px
 			padding: 62.5px 15px
 			box-sizing: border-box
+			& > img
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 50%
+				transform: translateX(-50%)
 			&:hover
+
+				img
+					transform: translateX(-50%) scale(1.05)
+					transition: all .3s
 				i
 					display: block
 					text-align: right
@@ -199,6 +210,7 @@ header
 			&:nth-child(n+5)
 				margin-top: 16px
 			p a
+				position: relative
 				margin: 0
 				text-align: center
 				font-size: 25px
