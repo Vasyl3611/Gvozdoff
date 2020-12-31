@@ -1,0 +1,428 @@
+@import "fonts"
+// @import "libs"
+@import "vars"
+a
+	text-decoration: none
+body
+	position: relative
+	font-family: TT Drug
+	margin: 0
+.order-btn
+	padding: 7px 31px
+	border: 1px solid #1C1A1A
+header
+	background: #1C1A1A 0% 0% no-repeat padding-box
+	opacity: 0.9
+	text-align: center
+	padding: 25px 15px 15px
+	&.sticky
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 999
+		transition: all .3s ease
+		animation: down 0.5s ease
+		box-shadow: 0 15px 18px rgba(0,0,0,.1)
+		.menu-wrapper
+			margin-top: 10px
+	.toggle-menu
+		display: none
+	.menu-btn
+		display: none
+	svg
+		path
+			fill: #ffffff
+	img
+		background: #ffffff
+
+	.menu-wrapper
+		margin: 25px auto 0
+		display: flex
+		justify-content: space-around
+		ul
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 50%
+			li
+				list-style: none
+				a
+					text-align: left
+					font-family: TT Drug
+					font-size: 15px
+					letter-spacing: 0px
+					color: #FFFFFF
+					opacity: 0.7
+					&:hover
+						opacity: 1
+						text-decoration: none
+						transition: all .3s
+		.header-contacts
+			display: flex
+			justify-content: space-between
+			align-items: center
+			i
+				text-align: left
+				font-size: 15px
+				letter-spacing: 0px
+				color: #FFFFFF
+				opacity: 0.7
+				&:hover
+					opacity: 1
+					text-decoration: none
+					transition: all .3s
+			a
+				margin-right: 20px
+				text-align: left
+				font-family: TT Drug
+				font-size: 15px
+				letter-spacing: 0px
+				color: #FFFFFF
+				opacity: 0.7
+				&:hover
+					opacity: 1
+					text-decoration: none
+					transition: all .3s
+				&.btn-order
+					border: 1px solid #FFFFFF
+					padding: 6px 31px
+					&:hover
+						opacity: 1
+						text-decoration: none
+						transition: all .3s
+			.dropdown
+				position: relative
+				display: inline-block
+				&:hover
+					.dropdown-content
+						display: block
+						background: #1C1A1A 0% 0% no-repeat padding-box
+						opacity: 0.9
+						a
+							display: block
+				.dropdown-content
+					width: 140px
+					display: none
+					position: absolute
+					background-color: #f9f9f9
+					width: 55px
+					padding-left: 5px
+					left: -4px
+				.dropbtn
+					position: relative
+					cursor: pointer
+					padding-right: 15px
+					color: #fff
+					opacity: .7
+					&:hover
+						opacity: 1
+						transition: all .3s
+						i
+							opacity: 1
+							transition: all .3s
+
+.video-wrapper
+	max-height: 100vh
+	video
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: -1
+	.main-content
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 160px 0 0
+		h1
+			margin: 0
+			text-align: center
+			font-family: TT Drug
+			letter-spacing: 0px
+			font-size: 60px
+			line-height: normal
+			color: #FFFFFF
+			opacity: 1
+		#myVideo
+			position: absolute
+			right: 0
+			bottom: 0
+			min-width: 100%
+			min-height: 100%
+		.subtitle
+			text-align: center
+			font-size: 35px
+			font-family: TT Drug
+			letter-spacing: 0px
+			color: #FFFFFF
+			opacity: 1
+			text-transform: uppercase
+			margin-bottom: 0
+	.arrow-block
+		margin-top: 180px
+		margin-bottom: 100px
+		text-align: center
+		cursor: pointer
+		i
+			font-size: 60px
+			color: #ffffff
+			opacity: .5
+.activities
+	background: #F5F4F4
+	opacity: 1
+	.activities-wrapper
+		position: relative
+		top: -60px
+		padding: 15px
+		margin: 0 auto
+		background: #fff
+		max-width: 1024px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.activities-item
+			text-align: center
+			width: 24%
+			background: url(/img/spa.png)
+			background-position: center
+			display: flex
+			flex-direction: column
+			justify-content: center
+			max-width: 236px
+			padding: 62.5px 15px
+			box-sizing: border-box
+			&:hover
+				i
+					display: block
+					text-align: right
+					transition: all .5s
+			&:nth-child(n+5)
+				margin-top: 16px
+			p a
+				margin: 0
+				text-align: center
+				font-size: 25px
+				letter-spacing: 0px
+				color: #FFFFFF
+			i
+				color: #fff
+				opacity: 0.5
+				font-size: 41px
+				font-weight: 300
+				margin-top: 15px
+.about-us
+	background: #f5f4f4
+	.about-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		position: relative
+		.about-text
+			padding: 63px 100px 63px 300px
+			background: #FFFFFF
+			box-shadow: 0px 6px 22px #00244817
+			max-width: 60%
+			margin-right: 16px
+			img
+				position: absolute
+				left: 0
+				top: 78px
+				max-width: 38%
+			h2
+				text-transform: uppercase
+				font-weight: 400
+				font-size: 35px
+			p
+				text-align: left
+				font-size: 17px
+				line-height: 25px
+				letter-spacing: 0px
+				color: #1C1A1A
+			.detail
+				margin-top: 25px
+				a
+					display: block
+					color: #1c1a1a
+					text-align: right
+					opacity: 0.7
+					&:hover
+						i
+							transform: translateX(10px)
+					i
+						margin-left: 10px
+.swiper-container
+	.swiper-wrapper
+		display: flex
+		align-items: center
+		.swiper-slide
+			margin-top: 60px
+			text-align: center
+			&.swiper-slide-active
+				img
+					max-width: 100%
+	.swiper-button-next , .swiper-button-prev
+		right: auto
+		left: 55%
+		transform: translateX(-50%)
+		top: auto
+		bottom: 12px
+		width: 52px
+		height: 19px
+		display: flex
+		align-items: center
+		&:after
+			content: url(/img/slider_black_arrow_r.svg)
+			width: 58px
+			height: 44px
+	.swiper-button-prev
+		left: 45%
+		&:after
+			content: url(/img/slider_black_arrow_l.svg)
+			width: 58px
+			height: 44px
+.gallery
+	background: #F5F4F4
+	padding: 40px 0 80px
+	img
+		max-width: 80%
+	.swiper-gallery
+		padding-bottom: 50px
+		.swiper-wrapper
+			display: flex
+			align-items: center
+			.swiper-slide
+				margin-top: 60px
+				text-align: center
+				&.swiper-slide-active
+					img
+						max-width: 100%
+
+		.swiper-button-next , .swiper-button-prev
+			right: auto
+			left: 55%
+			transform: translateX(-50%)
+			top: auto
+			bottom: 12px
+			width: 52px
+			height: 19px
+			display: flex
+			align-items: center
+			&:after
+				content: url(/img/slider_black_arrow_r.svg)
+				width: 58px
+				height: 44px
+		.swiper-button-prev
+			left: 45%
+			&:after
+				content: url(/img/slider_black_arrow_l.svg)
+				width: 58px
+				height: 44px
+.testimonials
+	padding: 25px 0
+	background: url(/img/castle.png) center no-repeat
+	background-size: cover
+	h2
+		text-align: center
+		font-size: 35px
+		font-family: TT Drug
+		letter-spacing: 0px
+		color: #FFFFFF
+	.swiper-testimonials
+		max-width: 800px
+		padding-bottom: 40px
+		.swiper-slide
+			padding-left: 30px
+			box-sizing: border-box
+		.testimonial-item
+			background: #ffffff
+			padding: 0
+			display: flex
+			.avatar-div
+				width: 23%
+				background: #F5F4F4
+				text-align: left
+				img
+					margin-left: -30px
+					margin-top: 34px
+			p
+				text-align: left
+				margin: 0
+			.testimonial-description
+				width: 77%
+				padding: 30px 30px 40px 20px
+				.testimonial-title
+					font-family: TT Drug
+					font-size: 25px
+					letter-spacing: 0px
+					color: #1C1A1A
+				.testimonial-subtitle
+					margin-top: 5px
+					font-size: 15px
+					font-family: TT Drug
+					color: #9B9594
+				.testimonial-text
+					margin-top: 10px
+					font-size: 15px
+					line-height: 19px
+					font-family: TT Drug
+					color: #1C1A1A
+		.swiper-pagination
+			color: #ffffff
+			bottom: 10px
+		.swiper-button-prev
+			left: 56px
+			&:after
+				content: url(/img/slider_white_arrow_l.svg)
+		.swiper-button-next
+			left: auto
+			right: -20px
+			&:after
+				content: url(/img/slider_white_arrow_r.svg)
+footer
+	background: #F5F4F4
+	padding-top: 70px
+	.footer-content
+		margin: 0 auto
+		max-width: 1000px
+		display: flex
+		justify-content: space-between
+		.footer-div
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			max-width: 300px
+			p
+				margin-bottom: 0
+				margin-top: 20px
+			a
+				font-family: TT Drug
+				font-size: 15px
+				color: #1C1A1A
+				line-height: 19px
+				margin-top: 10px
+				display: block
+				&:first-child
+					margin-top: 0
+			.socials
+				margin-top: 20px
+				display: flex
+				flex-direction: row
+				align-items: center
+				a
+					margin-top: 0
+					margin-right: 12px
+					opacity: 0.5
+					margin-left: 0
+					&:last-child
+						margin-right: 0
+	.copy-div
+		background: #1C1A1A
+		padding: 10px
+		margin-top: 20px
+		p
+			margin: 0
+			color: #9B9594
+			text-align: center
+			font-size: 11px
+@import "media"
